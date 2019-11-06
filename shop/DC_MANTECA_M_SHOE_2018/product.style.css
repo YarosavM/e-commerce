@@ -1,0 +1,145 @@
+.product-content {
+	margin-top: 53px;
+}
+
+.product-full-image {
+
+}
+.product-sub-image {
+	height: 125px!important;
+	width: auto!important;
+	background-position: center;
+	background-size: contain;
+	opacity: 0.7;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+	transition: 0.3s;
+	cursor:pointer;
+	transform: scale(0.975);
+}
+.product-sub-image:hover {
+	opacity: 1;
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(0%);
+	transform: scale(1);
+}
+
+.product-caption {
+	font-size: 22px;
+	color: rgba(0,0,0,0.75);
+	font-weight: 700;
+}
+.sub-images-zone{
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 125px;
+}
+.slide-block {
+	position: absolute;
+	width:30px!important;
+	border: 1px solid black;
+	background: rgba(0,0,0,0.75);
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 20px;
+	z-index: 11;
+}
+#subImageContent{
+	height: 125px;
+	width: max-content;
+}
+#slide{
+	margin-left: 32px;
+}
+#slideBack{
+}
+
+.product-essential-block {
+	padding: 15px 25px;
+}
+
+
+
+
+
+.func-fav-image {
+	height: 50px;
+    opacity: 0.7;
+    transition: 0.3s;
+    transform: scale(0.85);
+}
+.func-fav-image:hover{
+	opacity: 0.9;
+	transform: scale(1);
+}
+
+
+
+
+.green-option{
+	background: green!important;
+}
+
+
+
+
+
+.price-block {
+	margin-top: 35px;
+}
+.current-price{
+	display: inline-block;
+	font-size: 25px;
+	padding: 5px;
+	font-weight: 700;
+	color: rgba(0,0,0,0.8);
+}
+.old-price{
+	display: inline-block;
+	text-decoration: line-through;
+	margin: 0px 10px;
+	padding: 1px;
+	font-size: 18px;
+	font-weight: 100;
+	color: rgba(0,0,0,0.6);
+}
+
+.options-block {
+	margin-bottom: 10px;
+}
+.value-text {
+	font-size: 16px;
+	text-transform: none;
+}
+
+.action-block {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.buy-button {
+	width: 100%;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.action-element {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+
+.information-block {
+	
+}
+.other-products-grid {
+	overflow: hidden;
+}
+.other-products {
+	margin: 15px 0px;
+}
