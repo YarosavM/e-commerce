@@ -191,3 +191,8 @@ function archieve_filter_widget_init() {
     ) );
 } 
 add_action( 'widgets_init', 'archieve_filter_widget_init' );
+
+function wp_shop_categories_pos(){
+	register_nav_menu('shop_categories_pos',__('Shop Categories Position'));
+}
+add_action( 'init', 'wp_shop_categories_pos');

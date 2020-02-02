@@ -334,26 +334,32 @@ body{
 	justify-content: space-around;
 	font-size: 22px;
 	color: white;
+	ul{
+
+	}
+	li{
+		a{
+			color: rgba(255,255,255,0.9);
+			padding: 1px 20px;
+			margin: 10px;
+			transition: 0.3s;
+			border: 1.5px solid rgba(255,255,255,0.7);
+			border-radius: 2px;
+			transition: 0.3s;
+			transform: scale(0.975);
+		}
+		a:hover{
+			border: 1.5px solid rgba(255,255,255,1);
+			color: rgba(255,255,255,1);
+			transform: scale(1);
+		}
+		div{
+			padding: 3px 10px;
+		}
+	}
 }
 .sections-menu-element{
-	a{
-		color: rgba(255,255,255,0.9);
-		padding: 1px 20px;
-		margin: 10px;
-		transition: 0.3s;
-		border: 1.5px solid rgba(255,255,255,0.7);
-		border-radius: 2px;
-		transition: 0.3s;
-		transform: scale(0.975);
-	}
-	a:hover{
-		border: 1.5px solid rgba(255,255,255,1);
-		color: rgba(255,255,255,1);
-		transform: scale(1);
-	}
-	div{
-		padding: 3px 10px;
-	}
+	
 }
 .sections-menu-element-active {
 	a{

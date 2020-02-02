@@ -15,49 +15,6 @@
 }*/ ?>
 <?php ale_option('sitelogo'); /*?>
 
-<section class="slider-example">
-	<div class="newhomeslider wrapper">
-		<ul class="slides">
-			<?php $slider = ale_sliders_get_slider('test-slider');  ?>
-			<?php if($slider):?>
-				<?php foreach ($slider['slides'] as $slide) : ?>
-					<li>
-						<figure>
-							<img src="<?php echo $slide['image']; ?>" alt="<?php echo $slide['title']; ?>" />
-							<figcaption>
-								<div class="sliderdata">
-									<?php if($slide['title']){ ?>
-										<div class="titleslide headerfont">
-											<?php if($slide['url']){
-												echo "<a href='".$slide['url']."'>";
-											} ?>
-
-											<?php echo $slide['title']; ?>
-
-											<?php if($slide['url']){
-												echo "</a>";
-											} ?>
-										</div>
-									<?php } ?>
-									<?php if($slide['description']){ ?>
-										<div class="descriptionslide">
-											<?php echo $slide['description']; ?>
-										</div>
-									<?php } ?>
-									<?php if($slide['html']){ ?>
-										<div class="descriptionslide">
-											<?php echo $slide['html']; ?>
-										</div>
-									<?php } ?>
-								</div>
-							</figcaption>
-						</figure>
-					</li>
-				<?php endforeach; ?>
-			<?php endif;?>
-		</ul>
-	</div>
-</section>
 
 <?php */ ?>
 
@@ -84,11 +41,6 @@
 							</div>
 						</div>
 					</li>
-					<!--<li>
-						<a href="">
-							<div class="user-cabinet"></div>
-						</a>
-					</li>-->
 					<li>
 						<a href="http://localhost/wamp_wordpress/wordpress/cart/">
 							<div class="basket"></div>
@@ -99,25 +51,32 @@
 		</nav>
 	</div>
 	<div class="sections-menu" id="sections-menu">
+		<?php
+		wp_nav_menu( array(
+			'theme_location' => 'shop_categories_pos',
+			'container_class' => 'sections-menu',
+			'container_id' => 'sections-menu',
+		) );
+		?>
 		<ul class="menu">
 			<li class="sections-menu-element">
 				<a href="http://localhost/wamp_wordpress/wordpress/product-category/shop/">
-					<div class="header-menu-option">Women</div>
+					<div>Women</div>
 				</a>
 			</li>
 			<li class="sections-menu-element">
 				<a href="http://localhost/wordpress/shop/#men">
-					<div class="header-menu-option">Men</div>
+					<div>Men</div>
 				</a>
 			</li>
 			<li class="sections-menu-element">
 				<a href="http://localhost/wordpress/shop/#new">
-					<div class="header-menu-option">New</div>
+					<div>New</div>
 				</a>
 			</li>
 			<li class="sections-menu-element">
 				<a href="http://localhost/wordpress/shop/#sale">
-					<div class="header-menu-option">Sales</div>
+					<div>Sales</div>
 				</a>
 			</li>
 		</ul>
