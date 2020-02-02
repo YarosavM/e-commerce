@@ -50,7 +50,6 @@
 			</div>
 		</nav>
 	</div>
-	<div class="sections-menu" id="sections-menu">
 		<?php
 		wp_nav_menu( array(
 			'theme_location' => 'shop_categories_pos',
@@ -58,7 +57,7 @@
 			'container_id' => 'sections-menu',
 		) );
 		?>
-		<ul class="menu">
+		<!--<ul class="menu">
 			<li class="sections-menu-element">
 				<a href="http://localhost/wamp_wordpress/wordpress/product-category/shop/">
 					<div>Women</div>
@@ -79,6 +78,5 @@
 					<div>Sales</div>
 				</a>
 			</li>
-		</ul>
-	</div>
+		</ul>-->
 </header>

@@ -2,6 +2,13 @@
 
 jQuery.noConflict();
 
+
+
+//document.getElementById("sections-menu").getElementsByTagName("ul").classList.add("menu");
+//console.log(categoriesMenu.class);
+
+
+
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
