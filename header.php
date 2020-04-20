@@ -57,26 +57,4 @@
 			'container_id' => 'sections-menu',
 		) );
 		?>
-		<!--<ul class="menu">
-			<li class="sections-menu-element">
-				<a href="http://localhost/wamp_wordpress/wordpress/product-category/shop/">
-					<div>Women</div>
-				</a>
-			</li>
-			<li class="sections-menu-element">
-				<a href="http://localhost/wordpress/shop/#men">
-					<div>Men</div>
-				</a>
-			</li>
-			<li class="sections-menu-element">
-				<a href="http://localhost/wordpress/shop/#new">
-					<div>New</div>
-				</a>
-			</li>
-			<li class="sections-menu-element">
-				<a href="http://localhost/wordpress/shop/#sale">
-					<div>Sales</div>
-				</a>
-			</li>
-		</ul>-->
 </header>

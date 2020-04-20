@@ -51,7 +51,13 @@
         <div class="footer-content-block grid-x row">
             <div class="social-medias float-left medium-4 large-3 columns">
                 <div class="moto">Social medias: </div>
-                <ul class="list menu">
+                <?php
+                    wp_nav_menu( array (
+                        'theme_location' => 'social_medias_footer_pos',
+                        'container_class' => 'socialMediasFooterContainer'
+                    ) );
+                ?>
+                <!--<ul class="list menu">
                     <li>
                         <a class="social-link" href="https://www.facebook.com">
                             <img class="social-link-icon" src="css/images/icons/facebook.png" alt="Facebook">
@@ -67,7 +73,7 @@
                             <img class="social-link-icon" src="css/images/icons/twitter.png" alt="Twitter">
                         </a>
                     </li>
-                </ul>
+                </ul>-->
             </div>
             <div class="navigation float-left medium-5 large-6 columns">
                 <div class="grid-x row footer-menu">

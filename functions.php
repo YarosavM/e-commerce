@@ -196,3 +196,58 @@ function wp_shop_categories_pos(){
 	register_nav_menu('shop_categories_pos',__('Shop Categories Position'));
 }
 add_action( 'init', 'wp_shop_categories_pos');
+// To display use: 
+/*	
+wp_nav_menu( array(
+	'theme_location' => 'shop_categories_pos',
+	'container_class' => 'sections-menu',
+	'container_id' => 'sections-menu',
+) );
+*/
+
+function wp_social_media_footer_pos(){
+	register_nav_menu('social_medias_footer_pos', __('Social Medias Footer Position'));
+}
+add_action( 'init', 'wp_social_media_footer_pos' );
+
+
+
+
+
+
+
+// Customization custom fields
+add_action( 'customize_register', 'my_custom_customize_register', 99 );
+function my_custom_customize_register( $wp_customize ) {
+    $wp_customize->add_section(
+        'cust_homepage_section',
+        array(
+            'title'    => __( 'Home page', 'text-domain' ),
+            'priority' => 20,
+            'panel'    => 'woocommerce',
+            'description' => '', 
+        )
+    );
+    $wp_customize->add_setting( 'cust_hp_moto_section_settings', array( 'transport' => 'postMessage' ) );
+    $wp_customize->add_control( 'cust_hp_moto_section_settings_control', 
+        array(
+            'label'     => __( 'Moto', 'text-domain' ),
+            'type'      => 'text',
+            'settings'  => 'cust_hp_moto_section_settings',
+            'section'   => 'cust_homepage_section',
+            'priority'  => 20,
+        ) 
+	);
+	
+	$wp_customize->add_setting( 'cust_hp_moto_link_settings', array( 'transport' => 'postMessage' ) );
+    $wp_customize->add_control( 'cust_hp_moto_link_settings_control', 
+        array(
+            'label'     => __( 'Moto link', 'text-domain' ),
+            'type'      => 'text',
+            'settings'  => 'cust_hp_moto_link_settings',
+            'section'   => 'cust_homepage_section',
+            'priority'  => 25,
+        ) 
+    );
+}
+// To display use echo get_theme_mod( 'cust_hp_moto_section_settings' );

@@ -105,7 +105,14 @@ function w3RemoveClass(element, name) {
 //  ----------  //
 
 
+//Add necessary element classes to menus elements
+let socialMediasFooterContainer = document.querySelectorAll('.socialMediasFooterContainer');
+socialMediasFooterContainer[0].querySelectorAll('ul')[0].classList.add('list');
 
+console.log(socialMediasFooterContainer[0].querySelectorAll('ul')[0].querySelectorAll('li').length);
+for(let i = 0; i < socialMediasFooterContainer[0].querySelectorAll('ul')[0].querySelectorAll('li').length; i++){
+    socialMediasFooterContainer[0].querySelectorAll('ul')[0].querySelectorAll('li')[i].querySelectorAll('a')[0].classList.add('social-link');
+}
 
 
 // * Make active size and color onclick(options)
@@ -151,6 +158,7 @@ function sideScroll(element,direction,speed,distance,step){
   }, speed);
 };
 //  ----------  //
+
 
 
 // * Gallery. Onclick make from .product-sub-image the .product-full-image
