@@ -401,19 +401,75 @@ body, html {
 .social-link:nth-first-child {
   padding: 5px 15px 5px 5px !important; }
 
-.social-link-icon {
+.social-facebook a {
+  background-image: url("http://localhost/wamp_wordpress/wordpress/wp-content/uploads/2020/04/facebook.png");
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   width: 50px;
   height: 50px;
-  transition: 0.3s; }
-
-.social-link-icon:hover {
   transition: 0.3s;
-  -webkit-filter: grayscale(50%);
+  font-size: 0 !important;
+  cursor: pointer;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  .social-facebook a:hover {
+    transition: 0.3s;
+    -webkit-filter: grayscale(50%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%); }
+
+.social-instagram {
+  background-image: url("http://localhost/wamp_wordpress/wordpress/wp-content/uploads/2020/04/instagram.png");
+  -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
-  filter: grayscale(50%); }
+  filter: grayscale(100%);
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  font-size: 0 !important;
+  cursor: pointer;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  .social-instagram:hover {
+    transition: 0.3s;
+    -webkit-filter: grayscale(50%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%); }
+
+.social-twitter {
+  background-image: url("http://localhost/wamp_wordpress/wordpress/wp-content/uploads/2020/04/twitter.png");
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  font-size: 0 !important;
+  cursor: pointer;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  .social-twitter:hover {
+    transition: 0.3s;
+    -webkit-filter: grayscale(50%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%); }
+
+.footerLinksList ul li a {
+  color: rgba(255, 255, 255, 0.75);
+  padding: 3px;
+  margin: 3px 0px;
+  transition: 0.3s; }
+.footerLinksList ul li a:hover {
+  color: rgba(255, 255, 255, 0.9); }
+.footerLinksList ul li:first-child a {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  transition: 0.3s;
+  padding: 1px;
+  margin: 3px 0px; }
+.footerLinksList ul li:first-child a:hover {
+  color: white; }
 
 .footer-copyright-block {
   color: white;

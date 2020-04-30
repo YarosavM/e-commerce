@@ -109,10 +109,18 @@ function w3RemoveClass(element, name) {
 let socialMediasFooterContainer = document.querySelectorAll('.socialMediasFooterContainer');
 socialMediasFooterContainer[0].querySelectorAll('ul')[0].classList.add('list');
 
-console.log(socialMediasFooterContainer[0].querySelectorAll('ul')[0].querySelectorAll('li').length);
+//console.log(socialMediasFooterContainer[0].querySelectorAll('ul')[0].querySelectorAll('li').length);
 for(let i = 0; i < socialMediasFooterContainer[0].querySelectorAll('ul')[0].querySelectorAll('li').length; i++){
     socialMediasFooterContainer[0].querySelectorAll('ul')[0].querySelectorAll('li')[i].querySelectorAll('a')[0].classList.add('social-link');
 }
+
+
+let footerLinksList = document.querySelectorAll('.footerLinksList');
+
+for(let i = 0; i < footerLinksList.length; i++){
+    footerLinksList[i].querySelectorAll('ul')[0].classList.add('vertical', 'menu');
+}
+
 
 
 // * Make active size and color onclick(options)
@@ -129,19 +137,6 @@ jQuery(document).ready(function(){
   });
 });
 //  ----------  //
-
-// * Sub images scrolling on buttons click (under main image horizontal bar scrolling)
-var button = document.getElementById('slide');
-button.onclick = function () {
-  var subImageContainer = document.getElementById('subImageContainer');
-  sideScroll(subImageContainer,'right',25,100,10);
-};
-
-var back = document.getElementById('slideBack');
-back.onclick = function () {
-  var subImageContainer = document.getElementById('subImageContainer');
-  sideScroll(subImageContainer,'left',25,100,10);
-};
 
 function sideScroll(element,direction,speed,distance,step){
   scrollAmount = 0;
@@ -192,3 +187,17 @@ function zoom(e){
   zoomer.style.backgroundPosition = x + '% ' + y + '%';
 }
 /******************/
+
+
+// * Sub images scrolling on buttons click (under main image horizontal bar scrolling)
+var button = document.getElementById('slide');
+button.onclick = function () {
+  var subImageContainer = document.getElementById('subImageContainer');
+  sideScroll(subImageContainer,'right',25,100,10);
+};
+
+var back = document.getElementById('slideBack');
+back.onclick = function () {
+  var subImageContainer = document.getElementById('subImageContainer');
+  sideScroll(subImageContainer,'left',25,100,10);
+};

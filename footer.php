@@ -57,28 +57,17 @@
                         'container_class' => 'socialMediasFooterContainer'
                     ) );
                 ?>
-                <!--<ul class="list menu">
-                    <li>
-                        <a class="social-link" href="https://www.facebook.com">
-                            <img class="social-link-icon" src="css/images/icons/facebook.png" alt="Facebook">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social-link" href="https://www.instagram.com">
-                            <img class="social-link-icon" src="css/images/icons/instagram.png" alt="Instagram">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social-link" href="https://www.twitter.com">
-                            <img class="social-link-icon" src="css/images/icons/twitter.png" alt="Twitter">
-                        </a>
-                    </li>
-                </ul>-->
             </div>
             <div class="navigation float-left medium-5 large-6 columns">
                 <div class="grid-x row footer-menu">
                     <div class="columns medium-6 large-6">
-                        <ul class="vertical menu">
+                        <?php 
+                            wp_nav_menu( array (
+                                'theme_location' => 'links_list_1_footer_pos',
+                                'container_class' => 'footerLinksList'
+                            ) );
+                        ?>
+                    <!--<ul class="vertical menu">
                             <li class="primary-link">
                                 <a href="#">Start shopping</a>
                             </li>
@@ -97,10 +86,16 @@
                             <li class="secondary-link">
                                 <a href="#">Sales</a>
                             </li>
-                        </ul>
+                        </ul>-->
                     </div>
                     <div class="columns medium-6 large-6">
-                        <ul class="vertical menu">
+                        <?php 
+                            wp_nav_menu( array (
+                                'theme_location' => 'links_list_2_footer_pos',
+                                'container_class' => 'footerLinksList'
+                            ) );
+                        ?>
+                    <!--<ul class="vertical menu">
                             <li class="primary-link">
                                 <a href="#">Lia.go</a>
                             </li>
@@ -119,7 +114,7 @@
                             <li class="secondary-link">
                                 <a href="#">Support</a>
                             </li>
-                        </ul>
+                        </ul>-->
                     </div>
                 </div>
             </div>

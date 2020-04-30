@@ -185,12 +185,24 @@ add_action('woocommerce_single_product_summary', 'woocommerce_template_single_ex
 // Archieve product WOOF Filter Zone
 function archieve_filter_widget_init() {
     register_sidebar(array(
-        'name' =>   __( 'Filter sidebar', 'test theme' ),
+        'name' =>   __( 'Filter sidebar', 'dobie' ),
         'id' =>     'filter_sidebar',
-        'description' => __( 'This will appear on archive products page as filter sidebar', 'test theme' )
+        'description' => __( 'This will appear on archive products page as filter sidebar', 'dobie' )
     ) );
 } 
 add_action( 'widgets_init', 'archieve_filter_widget_init' );
+
+// Widget search area (for AWS plugin)
+function aws_search_area_init() {
+	register_sidebar(array(
+		'name' => __( 'Search Area', 'dobie' ),
+		'id' => 'aws_search_sidebar',
+		'description' => __( 'Area for AWS search plugin', 'dobie' )
+	) );
+}
+add_action( 'widgets_init', 'aws_search_area_init');
+
+
 
 function wp_shop_categories_pos(){
 	register_nav_menu('shop_categories_pos',__('Shop Categories Position'));
@@ -210,6 +222,17 @@ function wp_social_media_footer_pos(){
 }
 add_action( 'init', 'wp_social_media_footer_pos' );
 
+
+
+function wp_links_list_1_footer_pos(){
+	register_nav_menu('links_list_1_footer_pos', __('Links List Column 1 Footer Position'));
+}
+add_action( 'init', 'wp_links_list_1_footer_pos' );
+
+function wp_links_list_2_footer_pos(){
+	register_nav_menu('links_list_2_footer_pos', __('Links List Column 2 Footer Position'));
+}
+add_action( 'init', 'wp_links_list_2_footer_pos' );
 
 
 
